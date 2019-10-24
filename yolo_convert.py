@@ -45,8 +45,8 @@ except:
     try:
         import caffe_pb2
     except:
-        print 'caffe_pb2.py not found. Try:'
-        print '  protoc caffe.proto --python_out=.'
+        print ('caffe_pb2.py not found. Try:')
+        print ('  protoc caffe.proto --python_out=.')
         exit()
 
 def parse_caffemodel(caffemodel):
