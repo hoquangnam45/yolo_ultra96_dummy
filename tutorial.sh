@@ -66,6 +66,7 @@ export PYTHONPATH=$CAFFE_ROOT/distribute/python:/usr/local/lib/python2.7/dist-pa
 #check the environment
 python -c "import caffe; print caffe.__file__"
 
+cd ..
 
 ############################################################################
 # Section 3.0 
