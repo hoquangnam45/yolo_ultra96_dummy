@@ -2,11 +2,13 @@ layer {
   name: "data"
   type: "Input"
   top: "data"
-  transform_param {
-    mirror: false
-    yolo_height: 416
-    yolo_width: 416
-  }
+#####Comment following five lines #####
+#  transform_param {
+#    mirror: false
+#    yolo_height: 416
+#    yolo_width: 416
+#  }
+#####Nothing change to below layers#####
   input_param {
     shape {
       dim: 1
