@@ -1,0 +1,23 @@
+
+DNNC Kernel topology "yolo_tiny_license_plate_kernel_graph.jpg" for network "yolo_tiny_license_plate"
+DNNC kernel list info for network "yolo_tiny_license_plate"
+                               Kernel ID : Name
+                                       0 : yolo_tiny_license_plate
+
+                             Kernel Name : yolo_tiny_license_plate
+--------------------------------------------------------------------------------
+                             Kernel Type : DPUKernel
+                               Code Size : 0.14MB
+                              Param Size : 8.27MB
+                           Workload MACs : 5441.92MOPS
+                         IO Memory Space : 1.16MB
+                              Mean Value : 0, 0, 0, 
+                              Node Count : 15
+                            Tensor Count : 17
+                    Input Node(s)(H*W*C)
+                          layer0_conv(0) : 416*416*3
+                   Output Node(s)(H*W*C)
+                         layer15_conv(0) : 13*13*18
+                         layer22_conv(0) : 26*26*18
+
+
