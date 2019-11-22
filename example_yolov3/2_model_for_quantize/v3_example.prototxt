@@ -21,8 +21,8 @@ layer {
     yolo_width:608   #change width according to Darknet model
   }
   image_data_param {
-    source: "PATH_TO/5_file_for_test/calib.txt"         #change path accordingly
-    root_folder: "PATH_TO/5_file_for_test/calib_data/" #change path accordingly
+    source: "./5_file_for_test/calib.txt"         #change path accordingly
+    root_folder: "./5_file_for_test/calib_data/" #change path accordingly
 
     batch_size: 1
     shuffle: false
