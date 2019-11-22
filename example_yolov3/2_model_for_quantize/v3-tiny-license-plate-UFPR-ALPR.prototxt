@@ -5,29 +5,28 @@ name: "Darkent2Caffe"
 #input_dim: 3
 #input_dim: 416
 #input_dim: 416
-#####Change input data layer to ImageDate and modify root_folder/source beforerun DECENT#####
+#####Change input data layer to ImageDate and modify root_folder/source before run DECENT#####
 layer {
-	name: "data"
-	type: "ImageData"
-	top: "data"
-	top: "label"
-	include {
-		phase: TRAIN
-	}
-	yolo_height:416
-	yolo_width:416
-	#change height according to Darknet model
-	#change width according to Darknet model
-	}
-	image_data_param {
-	source:"./5_file_for_test/calib.txt"
-	root_folder:"./5_file_for_test/calib_data/"
-	batch_size: 1
-	shuffle: false
-	}
+name: "data"
+type: "ImageData"
+top: "data"
+top: "label"
+include {
+  phase: TRAIN
+}
+transform_param {
+  mirror: false
+  yolo_height:416    #change height according to Darknet model
+  yolo_width:416     #change width  according to Darknet model
+}
+image_data_param {
+  source:"./5_file_for_test/calib.txt"         #change path accordingly
+  root_folder:"./5_file_for_test/calib_data/"  #change path accordingly
+  batch_size: 1
+  shuffle: false
+}
 }
 ##### No changes after below layers#####
-
 layer {
     bottom: "data"
     top: "layer0-conv"
