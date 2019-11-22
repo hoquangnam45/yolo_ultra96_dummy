@@ -5,8 +5,7 @@ name: "Darkent2Caffe"
 #input_dim: 3
 #input_dim: 416
 #input_dim: 416
-#####Change input data layer to ImageDate and modify root_folder/source before
-run DECENT#####
+#####Change input data layer to ImageDate and modify root_folder/source beforerun DECENT#####
 layer {
 	name: "data"
 	type: "ImageData"
