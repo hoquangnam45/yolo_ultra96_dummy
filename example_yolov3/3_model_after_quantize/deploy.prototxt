@@ -2,13 +2,11 @@ layer {
   name: "data"
   type: "Input"
   top: "data"
-#####Comment following five lines #####
 #  transform_param {
 #    mirror: false
 #    yolo_height: 416
 #    yolo_width: 416
 #  }
-#####Nothing change to below layers#####
   input_param {
     shape {
       dim: 1
@@ -386,7 +384,7 @@ layer {
   top: "layer15-conv"
   phase: TRAIN
   convolution_param {
-    num_output: 255
+    num_output: 18
     bias_term: true
     pad: 0
     kernel_size: 1
@@ -483,7 +481,7 @@ layer {
   top: "layer22-conv"
   phase: TRAIN
   convolution_param {
-    num_output: 255
+    num_output: 18
     bias_term: true
     pad: 0
     kernel_size: 1
