@@ -1,0 +1,9 @@
+boxes size: 20
+0.991876 45.2982 30.4065 352.219 472.416
+0.67787 46.3547 237.367 191.81 372.357
+0.146777 9.69061 47.4827 357.477 489.492
+0.180861 9.69061 47.4827 357.477 489.492
+
+(process:3793): Gtk-WARNING **: Locale not supported by C library.
+	Using the fallback 'C' locale.
+Gtk-Message: Failed to load module "canberra-gtk-module"

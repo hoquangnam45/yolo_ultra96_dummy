@@ -1,0 +1,22 @@
+
+DNNC Kernel topology "char_regconition_kernel_graph.jpg" for network "char_regconition"
+DNNC kernel list info for network "char_regconition"
+                               Kernel ID : Name
+                                       0 : char_regconition
+
+                             Kernel Name : char_regconition
+--------------------------------------------------------------------------------
+                             Kernel Type : DPUKernel
+                               Code Size : 7.44KB
+                              Param Size : 0.95MB
+                           Workload MACs : 3.30MOPS
+                         IO Memory Space : 7.19KB
+                              Mean Value : 0, 0, 0, 
+                              Node Count : 4
+                            Tensor Count : 5
+                    Input Node(s)(H*W*C)
+                        conv2d_Conv2D(0) : 28*28*1
+                   Output Node(s)(H*W*C)
+                       dense_1_MatMul(0) : 1*1*10
+
+
